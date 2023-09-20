@@ -1,7 +1,7 @@
 <template>
   <span class="wrapper">
     <img :src="thumbnailSrc" class="image" v-if="thumbnailSrc" />
-    <span class="title">{{ name }}</span>
+    <span class="title" v-if="show_name">{{ name }}</span>
   </span>
 </template>
 
@@ -11,6 +11,10 @@ export default {
     value: {
       type: String,
       default: null,
+    },
+    show_name: {
+      type: Boolean,
+      default: false,
     },
   },
   computed: {

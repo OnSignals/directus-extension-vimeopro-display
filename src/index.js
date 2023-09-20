@@ -6,6 +6,19 @@ export default {
   icon: "subscriptions",
   description: "Display data from the Vimeo Pro interface extension",
   component: DisplayComponent,
-  options: null,
+  options: [
+    {
+      field: "show_name",
+      type: "boolean",
+      name: "Show video title",
+      meta: {
+        interface: "boolean",
+        options: {
+          label: "Yes",
+        },
+        width: "half",
+      },
+    },
+  ],
   types: ["json"],
 };
