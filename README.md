@@ -1,4 +1,4 @@
-# Vimeo Pro Directus extension
+# Vimeo Pro Directus display extension
 
 Directus extension that adds a display for the [Directus Vimeo Pro interface extension](https://github.com/OnSignals/directus-extension-vimeopro).
 
